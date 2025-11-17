@@ -5,11 +5,13 @@ import Skills from './components/Skills';
 import Documents from './components/Documents';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
+import Header from './components/Header';
 
 export default function Home() {
   return (
     <div className="bg-zinc-50 font-sans dark:bg-black">
       <main className="w-full bg-white dark:bg-black">
+        <Header/>
         <Introduction />
         <Curriculum />
         <Projects />
