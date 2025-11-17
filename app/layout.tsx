@@ -13,8 +13,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfólio - João Vitor Dias",
-  description: "Saiba mais sobre quem eu sou, meus objetivos e meus projetos.",
+  title: {
+    template: '%s | João Vitor Dias',
+    default: 'João Vitor Dias - Desenvolvedor & Tecnólogo',
+  },
+  description: "Portfólio acadêmico e profissional de João Vitor Dias. Desenvolvedor de Sistemas com foco em Python, React, e Inteligência Artificial.",
+  keywords: ["João Vitor Dias", "Desenvolvedor", "ADS", "Python", "React", "Next.js", "Portfólio", "São José dos Campos"],
+  authors: [{ name: "João Vitor Dias" }],
+  creator: "João Vitor Dias",
+  openGraph: {
+    title: "João Vitor Dias - Portfólio Acadêmico",
+    description: "Conheça meus projetos em tecnologia, IA e desenvolvimento.",
+    url: 'https://portfolio-academico-two.vercel.app',
+    siteName: 'Portfólio João Vitor Dias',
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
