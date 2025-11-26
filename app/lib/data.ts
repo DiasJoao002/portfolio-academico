@@ -48,7 +48,10 @@ export type DocumentItem = {
 
 export type Certification = {
   name: string;
-  image: string; // placeholders por enquanto
+  institution: string;
+  date: string;
+  image: string;
+  link: string;
 };
 
 export type ContactLink = {
@@ -190,11 +193,48 @@ export const documentsData: DocumentItem[] = [
 
 // Certificações
 export const certificationsData: Certification[] = [
-  { name: "Certificado ONIA - 1ª Olimpíada Nacional de Inteligência Artificial (2024)", image: "https://via.placeholder.com/300x200.png?text=Certificado+ONIA" },
-  { name: "Certificado de Finalista - FETEPS 2025 (Projeto Bluery)", image: "https://via.placeholder.com/300x200.png?text=Certificado+FETEPS" },
-  { name: "Curso de Álgebra Linear (KhanAcademy - em andamento)", image: "https://via.placeholder.com/300x200.png?text=Álgebra+Linear" },
-  { name: "Certificado TOEIC Bridge", image: "https://via.placeholder.com/300x200.png?text=TOEIC+Bridge" },
-  { name: "Desafio de MicroSaaS (Rocketseat)", image: "https://via.placeholder.com/300x200.png?text=MicroSaaS" },
+  {
+    name: "IT Essentials",
+    institution: "Cisco Networking Academy",
+    date: '2025',
+    image: '/assets/cisco.png',
+    link: 'https://drive.google.com/file/d/1VqyrQj6zD8UdLUpKrMxVOkASWMfszNUn/view?usp=sharing'
+  },
+  { 
+    name: "Medalha de Bronze - 1ª ONIA", 
+    institution: "Olimpíada Nacional de Inteligência Artificial",
+    date: "2024",
+    image: "/assets/onia.png",
+    link: "https://drive.google.com/file/d/1AZK5IOoM0M3mRqSYj2V6f4RD2Pfbnm1z/view?usp=sharing" 
+  },
+  { 
+    name: "Finalista FETEPS", 
+    institution: "Centro Paula Souza",
+    date: "2025",
+    image: "/assets/feteps.png",
+    link: "https://drive.google.com/file/d/1BAg7OaBN0-xYvL5voQQ27x7kfx5R5vQJ/view?usp=sharing" 
+  },
+  { 
+    name: "Linux Unhatched", 
+    institution: "Cisco Networking Academy",
+    date: "2025",
+    image: "/assets/linux.png",
+    link: "https://drive.google.com/file/d/1KWKBckFL_ePvDC2XFsf7Z9kI1dCYfiRb/view?usp=sharing" 
+  },
+  { 
+    name: "Proficiência Inglesa", 
+    institution: "TOEIC Bridge",
+    date: "2023",
+    image: "/assets/toeic.png",
+    link: "https://drive.google.com/file/d/1DafESPHcLmHJUxfH0E46dLYmrjcl0x8u/view?usp=sharing" 
+  },
+  { 
+    name: "Álgebra Linear", 
+    institution: "Khan Academy",
+    date: "Em andamento",
+    image: "/assets/khan.png",
+    link: "https://drive.google.com/file/d/1YDej8jWUKo4SI6qyIo9txr6wuPDy15ee/view?usp=sharing" 
+  },
 ];
 
 // Contato
