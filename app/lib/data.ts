@@ -31,9 +31,14 @@ export type Project = {
   }[];
 };
 
+export type Skill = {
+  name: string;
+  icon: string;
+}
+
 export type SkillCategory = {
   title: string;
-  skills: string[];
+  skills: Skill[];
 };
 
 export type DocumentItem = {
@@ -148,22 +153,37 @@ export const projectsData: Project[] = [
 // Habilidades
 export const skillsData: SkillCategory[] = [
   {
-    title: "Habilidades Técnicas (Hard Skills)",
+    title: "Tecnologias Principais",
     skills: [
-      "Linguagens: Python, JavaScript.",
-      "Front-End: React, Next.js, HTML5, CSS3, Tailwind CSS.",
-      "Back-End (Básico): Node.Js, Flask (Python).",
-      "Conceitos: Lógica de Programação, Estrutura de Dados, Princípios Ágeis (Scrum, OKRs).",
-      "Atualmente Explorando: Fundamentos de Cibersegurança (TryHackMe), Álgebra Linear, Cloud (AWS EC2)."
+      { name: "Python", icon: "SiPython" },
+      { name: "JavaScript", icon: "SiJavascript" },
+      { name: "React Native", icon: "SiReact" },
+      { name: "Next.js", icon: "SiNextdotjs" },
+      { name: "Scikit Learn", icon: "SiScikitlearn" },
+      { name: "Tailwind CSS", icon: "SiTailwindcss" },
+      { name: "HTML5", icon: "SiHtml5" },
+      { name: "CSS3", icon: "SiCss3" },
     ]
   },
   {
-    title: "Habilidades Interpessoais (Soft Skills)",
+    title: "Ferramentas & Conceitos",
     skills: [
-      "Liderança Servidora: Foco em remover impedimentos e servir às necessidades da equipe e dos usuários.",
-      "Escuta Ativa e Empatia: Habilidade de \"apaixonar-se pelo problema\" e construir soluções centradas no usuário.",
-      "Disciplina e Gestão de Foco: Aplicação de metodologias como \"Getting Things Done\".",
-      "Resiliência e Propósito: Capacidade de revisitar projetos, aprender com falhas e realinhar o trabalho a um propósito maior."
+      { name: "Git", icon: "SiGit" },
+      { name: "GitHub", icon: "SiGithub" },
+      { name: "Scrum", icon: "DiScrum" },
+      { name: "Linux", icon: "SiLinux" },
+      { name: "AWS", icon: "FaAws" },
+      { name: "Cybersecurity", icon: "AiOutlineSecurityScan" },
+      { name: "Arduino", icon: "SiArduino" },
+    ]
+  },
+  {
+    title: "Soft Skills",
+    skills: [
+      { name: "Liderança", icon: "FaHandsHelping" },
+      { name: "Comunicação", icon: "FaComments" },
+      { name: "Resolução de Problemas", icon: "FaLightbulb" },
+      { name: "Empatia", icon: "FaHeart" },
     ]
   }
 ];
